@@ -27,9 +27,9 @@ cc.Class({
     update(dt) {
         this.node.angle = this.node.angle % 360;
         if (this.node.angle <= -25) {
-            this.loadBird("bird2_2");
-        } else if (this.node.angle >= 25) {
             this.loadBird("bird2_0");
+        } else if (this.node.angle >= 25) {
+            this.loadBird("bird2_2");
         } else {
             this.loadBird("bird2_1");
         }
