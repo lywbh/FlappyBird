@@ -1,4 +1,4 @@
-# FlappyBird -- cocos2dx入门练习
+# FlappyBird -- cocos入门练习
 
 ##### 摸鱼一天的产物
 
