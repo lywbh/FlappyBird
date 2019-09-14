@@ -14,7 +14,9 @@ cc.Class({
     loadBird(resource) {
         var self = this;
         cc.loader.loadRes(resource, cc.SpriteFrame, function (err, spriteFrame) {
-            self.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+			if (self.node) {
+				self.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+			}
         });
     },
 

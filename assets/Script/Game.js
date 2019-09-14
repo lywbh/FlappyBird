@@ -57,10 +57,12 @@ cc.Class({
 
     openInput() {
         this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onPress, this);
+        this.node.on(cc.Node.EventType.TOUCH_START, this.onPress, this);
     },
 
     cancelInput() {
         this.node.off(cc.Node.EventType.MOUSE_DOWN, this.onPress, this);
+        this.node.off(cc.Node.EventType.TOUCH_START, this.onPress, this);
     },
 
     update(dt) {

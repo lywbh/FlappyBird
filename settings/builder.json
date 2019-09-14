@@ -14,7 +14,7 @@
     "orientation": "portrait",
     "subContext": ""
   },
-  "encryptJs": true,
+  "encryptJs": false,
   "excludeScenes": [],
   "fb-instant-games": {},
   "includeSDKBox": false,
@@ -24,12 +24,12 @@
   "mergeStartScene": false,
   "optimizeHotUpdate": false,
   "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
     "upsideDown": false
   },
-  "packageName": "org.cocos2d.helloworld",
+  "packageName": "org.cocos2d.flappyBird",
   "qqplay": {
     "REMOTE_SERVER_ROOT": "",
     "orientation": "portrait",
@@ -45,6 +45,6 @@
     "separate_engine": false,
     "subContext": ""
   },
-  "xxteaKey": "ff688736-0b72-4b",
+  "xxteaKey": "Lywbh19940520",
   "zipCompressJs": true
 }

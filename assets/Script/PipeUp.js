@@ -12,11 +12,11 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        speed: 160
+        speed: 180
     },
 
     onLoad() {
-        this.speed = 160;
+        this.speed = 180;
     },
 
     update(dt) {
