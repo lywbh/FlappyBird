@@ -52,7 +52,7 @@ cc.Class({
         var rotateUp = cc.rotateTo(0.2, -30).easing(cc.easeCubicActionOut());
         var rotateDown = cc.rotateTo(0.3, 30).easing(cc.easeCubicActionIn());
         rigidBody.node.runAction(cc.sequence(rotateUp, rotateDown));
-        rigidBody.linearVelocity = {x: 0, y: 500};
+        rigidBody.linearVelocity = {x: 0, y: 200};
     },
 
     openInput() {
@@ -75,7 +75,7 @@ cc.Class({
             this.lifeTime += dt;
             this.genCount += dt;
             if (this.genCount >= this.genSpan) {
-                this.genCount = 0
+                this.genCount = 0;
                 this.genWall();
             }
             this.score.getComponent(cc.Label).string = this.lifeTime.toFixed(2);
